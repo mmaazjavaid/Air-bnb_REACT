@@ -1,19 +1,19 @@
 import React from 'react';
-import person from '../images/person.jpg'
+import person1 from '../images/person1.jpg'
+import person2 from '../images/person2.jpg'
+import person3 from '../images/person3.jpg'
+import person4 from '../images/person4.jpg'
 import star  from '../images/star.jpg'
+import Contact from './Contact';
 const Card = () => {
     return (
         <div className="card">
-        <img src={person} className="card--image" />
-        <div className="card--stats">
-            <img src={star} className="card--star" />
-            <span>5.0</span>
-            <span className="gray">(6) • </span>
-            <span className="gray">USA</span>
+        <Contact person={person1} star={star} price={120} name={"Usama Ijaz"} />
+        <Contact person={person2} star={star} price={320} name={"Maaz Javaid"} />
+        <Contact person={person3} star={star} price={250} name={"Wahab Malik"} />
+        <Contact person={person4} star={star} price={200} name={"Hassan Jamil"} />
+        <Contact person={person1} star={star} price={120} name={"Usama Ijaz"} />
         </div>
-        <p>Life Lessons with Katie Zaferes</p>
-        <p><span className="bold">From $136</span> / person</p>
-    </div>
     );
 };
 

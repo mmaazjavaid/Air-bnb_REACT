@@ -77,7 +77,10 @@ code {
   text-align: left;
 }
 .card {
-  width: 175px;
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
   font-size: 12px;
 }
 
