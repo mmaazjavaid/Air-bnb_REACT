@@ -8,7 +8,7 @@ const  Contact=(props)=> {
             <img src={props.star} alt="star" className="card--star" />
             <span>5.0</span>
             <span className="gray">(6) • </span>
-            <span className="gray">{props.name ==="Maaz Javaid" ? "Maaz Javaid":"Taha Javaid"}</span>
+            <span className="gray">{props.name ==="Maaz Javaid" ? "M Maaz Javaid":props.name}</span>
         </div>
         <p>Life Lessons with Katie Zaferes</p>
         <p><span className="bold">From ${props.price}</span> / person</p>
