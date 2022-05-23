@@ -1,10 +1,9 @@
 import React from 'react';
-import GridImage from '../images/photo-grid.png'
 const Hero = () => {
     return (
         <div className='hero'>
             <div className='image-sec'>
-                <img className='grid-image' src={GridImage} alt=""  />
+                <img className='grid-image' src="images/photo-grid.png" alt=""  />
             </div>
             <div className='text-sec'>
                 <p className='text-sec-head'>Online Experiences</p>

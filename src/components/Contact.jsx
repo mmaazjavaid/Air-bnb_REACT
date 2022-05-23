@@ -6,7 +6,7 @@ const  Contact=(props)=> {
         
 <img src={`images/${props.person}`} alt="" className="card--image" />
         <div className="card--stats">
-            <img src={props.star} alt="star" className="card--star" />
+            <img src={`images/${props.star}`} alt="star" className="card--star" />
             <span>5.0</span>
             <span className="gray">(6) • </span>
             <span className="gray">{props.name ==="Maaz Javaid" ? "M Maaz Javaid":props.name}</span>
