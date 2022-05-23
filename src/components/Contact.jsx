@@ -1,9 +1,10 @@
 import React from 'react'
-
 const  Contact=(props)=> {
+  
   return (
       <div>
-<img src={props.person} alt="person" className="card--image" />
+        
+<img src={`images/${props.person}`} alt="" className="card--image" />
         <div className="card--stats">
             <img src={props.star} alt="star" className="card--star" />
             <span>5.0</span>
