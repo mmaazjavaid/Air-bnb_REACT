@@ -3,17 +3,24 @@ import React from 'react';
 // import person2 from '../images/person2.jpg'
 // import person3 from '../images/person3.jpg'
 // import person4 from '../images/person4.jpg'
-
+import data from '../components/data'
 import Contact from './Contact';
 const Card = () => {
+    const cardArray=data.map(item=>{
+        return <Contact 
+                img={item.coverImg}
+                rating={item.stats.rating}
+                reviewCount={item.stats.reviewCount}
+                location={item.location}
+                title={item.title}
+                price={item.price}
+        />
+    })
     return (
-        <div className="card">
-        <Contact person="person1.jpg" star="star.jpg" price={120} name={"Usama Ijaz"} />
-        <Contact person="person2.jpg" star="star.jpg" price={320} name={"Maaz Javaid"} />
-        <Contact person="person3.jpg" star="star.jpg" price={250} name={"Wahab Malik"} />
-        <Contact person="person4.jpg" star="star.jpg" price={200} name={"Hassan Jamil"} />
-        <Contact person="person1.jpg" star="star.jpg" price={120} name={"Usama Ijaz"} />
+        <div className='cards-list'>
+             {cardArray}
         </div>
+ 
     );
 };
 

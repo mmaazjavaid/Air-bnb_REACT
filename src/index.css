@@ -76,17 +76,32 @@ code {
   font-weight: 400;
   text-align: left;
 }
-.card {
+.cards-list {
   display: flex;
-  width: 100%;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
+  flex-wrap: nowrap;
+  gap: 20px;
+  margin: 20px;
+  overflow-x: auto;
+}
+
+.card {
+  width: 175px;
   font-size: 12px;
+  flex: 0 0 auto;         /* ADD */
+  display: flex;          /* ADD */
+  flex-direction: column; /* ADD */
 }
 
 .card--image {
   width: 100%;
   border-radius: 9px;
+  margin-bottom: 9px;
+}
+
+/* ADD */
+.card--title {
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .card--stats {
@@ -96,6 +111,11 @@ code {
 
 .card--star {
   height: 14px;
+}
+
+/* ADD */
+.card--price {
+  margin-top: auto;
 }
 .bold {
   font-weight: bold;

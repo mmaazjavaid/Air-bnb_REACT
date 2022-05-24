@@ -1,22 +1,18 @@
-import React from 'react'
-const  Contact=(props)=> {
-  
-  return (
-      <div>
-        
-<img src={`images/${props.person}`} alt="" className="card--image" />
-        <div className="card--stats">
-            <img src={`images/${props.star}`} alt="star" className="card--star" />
-            <span>5.0</span>
-            <span className="gray">(6) • </span>
-            <span className="gray">{props.name ==="Maaz Javaid" ? "M Maaz Javaid":props.name}</span>
-        </div>
-        <p>Life Lessons with Katie Zaferes</p>
-        <p><span className="bold">From ${props.price}</span> / person</p>
-      </div>
-   
-  )
-}
+import React from "react"
 
-export default Contact
+export default function Contact(props) {
+    return (
+        <div className="card">
+            <img src={`images/${props.img}`} className="card--image" />
+            <div className="card--stats">
+                <img src="images/star.jpg" className="card--star" />
+                <span>{props.rating}</span>
+                <span className="gray">({props.reviewCount}) • </span>
+                <span className="gray">{props.location}</span>
+            </div>
+            <p className="card--title">{props.title}</p>
+            <p className="card--price"><span className="bold">From ${props.price}</span> / person</p>
+        </div>
+    )
+}
 
