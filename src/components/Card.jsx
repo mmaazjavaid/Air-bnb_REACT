@@ -7,13 +7,9 @@ import data from '../components/data'
 import Contact from './Contact';
 const Card = () => {
     const cardArray=data.map(item=>{
-        return <Contact 
-                img={item.coverImg}
-                rating={item.stats.rating}
-                reviewCount={item.stats.reviewCount}
-                location={item.location}
-                title={item.title}
-                price={item.price}
+        return <Contact
+        key={item.id}
+        item={item}
         />
     })
     return (
